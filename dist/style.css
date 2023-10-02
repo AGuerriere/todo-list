@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+nav {
+  height: 15vh;
+  width:100%;
+  background-color: rgb(0, 18, 67);
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  height: 82vh;
+  flex-direction: row;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  font-size: 1.5rem;
+  background-color: rgba(235, 235, 250, 0.539);
+  padding-top: 20px;
+}
+
+aside div {
+  margin-bottom: 15px;
+}
+
+.container > aside:nth-child(1) > div:nth-child(4) {
+  font-size: 2rem;
+  margin: 15px auto 30px auto;
+}
+
+main {
+  width:100vw;
+  background-color: white;
+  padding: 30px 50px;
+}
+
+.newTask {
+  display: flex;
+  align-items: center;
+  margin-top:20px;
+  width: 80%;
+  background-color: rgba(235, 235, 250, 0.539);
+  height: 30px;
+  padding:5px;
+
+}
+
+.hide {
+  display: none;
+}
+
+.textInput {
+  display:block;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 90%;
+}
+
+.tasks {
+  margin:5px;
+}
+
+.addButton {
+  height:40px;
+  width: 90px;
+  background-color: greenyellow;
+  border: none;
+  border-radius: 4px;
+  margin-right:30px;
+}
+
+.cancelButton {
+  height:40px;
+  width: 90px;
+  background-color: rgba(245, 40, 40, 0.665);
+  border: none;
+  border-radius: 4px;
+  margin-right:30px;
+}
+
+
+
+footer {
+  background-color: rgb(0, 18, 67);
+  color: white;
+  font-size: 1rem;
+  height:3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
