@@ -1,8 +1,6 @@
 import Task from './task'
 
 const UI = () => {
-  const newTask = new Task('hi')
-  console.log(newTask.taskContent)
   const content = document.getElementById("content")
   // Create navbar
   const nav = document.createElement("nav")
@@ -77,7 +75,7 @@ const UI = () => {
     });
 
     const addTasks = () => {
-      createTask(document.querySelector("input").value)
+      createTask(document.querySelector(".textInput").value)
       addButton.remove()
       cancelButton.remove()
       input.remove()
@@ -103,7 +101,6 @@ const UI = () => {
       taskItem.innerHTML = `<input type="checkbox"> ${element.taskContent}`
       taskItem.classList.add('tasks')
       taskList.appendChild(taskItem)
-
     });
   }
 
@@ -113,17 +110,18 @@ const UI = () => {
   footer.innerText = "Created by Antonio Guerriere ⚡️"
   content.appendChild(footer)
 
-  const tasks = []
-
-  function createTask(input) {
-    let newTask = new Task(input);
-    tasks.push(newTask)
-}
 
 
 
 }
 
+const tasks = []
+
+function createTask(input) {
+  let newTask = new Task(input);
+  console.log(newTask)
+  tasks.push(newTask)
+}
 
 
 export default UI
